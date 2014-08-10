@@ -85,9 +85,9 @@
   var path = '/organizations/' + organization._id + '/surveys/' + survey._id 
   // Good
   var path = [
-    '/organizations/',
+    'organizations',
     organization._id,
-    '/surveys/',
+    'surveys',
     survey._id
   ].join('/');
   
