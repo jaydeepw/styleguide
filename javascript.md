@@ -111,7 +111,7 @@
   var fmt = require('./format-date');               // local modules fourth
   var oauthHelper = require('../../oauth-helper');  // relative modules last
   ```
-7. `sname_case` for naming database attributes
+7. `snake_case` for naming database attributes
 8. `camelCase` for variables and methods. 
 9. `Constructors` start with caps.
 10. `file-names` and `folder-names` must use hyphens and not underscores or caps.
