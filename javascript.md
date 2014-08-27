@@ -19,14 +19,15 @@
   ```
   
   ```js
-  // Prerred 
-  var expired = function (survey) {
+  // Preferred 
+  function expired (survey) {
     return record.expired;
-  };
-  var counts = function (survey) {
+  }
+  
+  function counts (survey) {
     survey.records = survey.data.length;
     return survey;
-  };
+  }
   
   survey.sync()
     .filter(expired)
