@@ -47,7 +47,7 @@
   function executable () {
     return !survey.changed && 
       (!survey.expired || survey.expires === 'never');
-  };
+  }
   
   if (survey.changed) {
     // do something
