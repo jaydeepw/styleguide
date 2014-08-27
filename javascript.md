@@ -7,7 +7,7 @@
 
   ```js
   // Not preferred
-  survey.sync()
+  surveys.sync()
     .filter(function (survey) {
       return record.expired;
     })
@@ -29,23 +29,23 @@
     return survey;
   }
   
-  survey.sync()
+  surveys.sync()
     .filter(expired)
     .map(counts)
     .save();
   ```
 2. Multiple var statements 
 3. if else
-  
+
   ```js
   if (err) {
     return res.json(400, { errors: ['There are no incidents']  });
   }
   
   // if you have a large expression to evaluate, write a method
-  var executable = function () {
-    return notChanged &&
-      !survey.changed && 
+  
+  function executable () {
+    return !survey.changed && 
       (!survey.expired || survey.expires === 'never');
   };
   
@@ -58,7 +58,7 @@
   }
   ```
 4. Ternary operators
-  
+
   ```js
   var exp = this.val1 < this.val2
     ? 'good'
