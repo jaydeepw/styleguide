@@ -117,3 +117,6 @@
 9. `Constructors` start with caps.
 10. `file-names` and `folder-names` must use hyphens and not underscores or caps.
   
+Further reading 
+
+1. [function qualityGuide](https://github.com/bevacqua/js)
