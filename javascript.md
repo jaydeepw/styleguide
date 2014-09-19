@@ -9,7 +9,7 @@
   // Not preferred
   surveys.sync()
     .filter(function (survey) {
-      return record.expired;
+      return survey.expired;
     })
     .map(function (survey) {
       survey.records = survey.data.length;
@@ -21,7 +21,7 @@
   ```js
   // Preferred 
   function expired (survey) {
-    return record.expired;
+    return survey.expired;
   }
   
   function counts (survey) {
